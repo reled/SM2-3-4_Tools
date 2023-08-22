@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>APP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>1.ico</normaloff>1.ico</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>SM2</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_13">
+         <item row="1" column="0">
+          <widget class="QTextBrowser" name="sm2_log"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="sm2_log_clear_button">
+           <property name="text">
+            <string>清空</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_11">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>选择公钥</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="sm2_pub_file_linetext"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="sm2_pub_file_button">
+               <property name="text">
+                <string>浏览文件</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="sm2_keygen_button">
+               <property name="text">
+                <string>生成公私钥对</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_14">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>选择私钥</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="sm2_pri_file_linetext"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="sm2_pri_file_button">
+               <property name="text">
+                <string>浏览文件</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab_4">
+              <attribute name="title">
+               <string>加密</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_15">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="0" column="0">
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_3">
+                     <property name="text">
+                      <string>选择要加密的文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="sm2_enc_file_linetext"/>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QPushButton" name="sm2_enc_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>或明文</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPlainTextEdit" name="sm2_enc_plaintext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_enc_plaintext_clear_button">
+                     <property name="text">
+                      <string>清空</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <layout class="QGridLayout" name="gridLayout_18">
+                   <item row="0" column="3">
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>文件名</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="4">
+                    <widget class="QLineEdit" name="sm2_cipher_filename_linetext"/>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="sm2_cipher_store_file_linetext"/>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>选择密文存放位置</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QPushButton" name="sm2_cipher_store_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="sm2_enc_button">
+                   <property name="text">
+                    <string>加密</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_5">
+              <attribute name="title">
+               <string>解密</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_25">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_24">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>选择要解密的文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_dec_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_dec_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>或密文</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPlainTextEdit" name="sm2_dec_ciphertext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_dec_ciphertext_clear_button">
+                     <property name="text">
+                      <string>清空</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>选择明文存放位置</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_plain_store_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_plain_store_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>文件名</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_plain_filename_linetext"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="sm2_dec_button">
+                   <property name="text">
+                    <string>解密</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_6">
+              <attribute name="title">
+               <string>签名</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_19">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>选择要签名的文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_sign_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_sign_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>选择签名存放位置</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_sign_sign_store_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_sign_sign_store_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>文件名</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_sign_sign_filename_linetext"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="sm2_sign_button">
+                   <property name="text">
+                    <string>签名</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_7">
+              <attribute name="title">
+               <string>验签</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_27">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_26">
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>选择要验证的文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_verify_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_verify_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QLabel" name="label_16">
+                     <property name="text">
+                      <string>选择存放签名的文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="sm2_verify_sign_store_file_linetext"/>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="sm2_verify_sign_file_button">
+                     <property name="text">
+                      <string>浏览文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="sm2_verify_button">
+                   <property name="text">
+                    <string>验证</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>SM3</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QTabWidget" name="tabWidget_3">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_12">
+            <attribute name="title">
+             <string>计算哈希</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_23">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_20">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>选择要哈希的文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="sm3_hash_file_linetext"/>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="sm3_hash_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="0" column="4">
+                  <widget class="QLineEdit" name="sm3_hash_hash_filename_linetext"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>选择哈希值存放位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="sm3_store_hash_file_linetext"/>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>文件名</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="sm3_store_hash_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="sm3_hash_button">
+                 <property name="text">
+                  <string>哈希</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_13">
+            <attribute name="title">
+             <string>校验</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_22">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_21">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>选择要校验的文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="sm3_verify_file_linetext"/>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="sm3_verify_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="sm3_verify_hash_file_linetext"/>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string>选择哈希值存放位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="sm3_verify_hash_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="sm3_verify_button">
+                 <property name="text">
+                  <string>校验</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QTextBrowser" name="sm3_log"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="sm3_log_clear_button">
+           <property name="text">
+            <string>清空</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>SM4</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <widget class="QTabWidget" name="tabWidget_4">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_14">
+            <attribute name="title">
+             <string>加密</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_28">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="text">
+                    <string>密钥</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_enc_key_linetext">
+                   <property name="placeholderText">
+                    <string>密钥长度尽量等于16，虽然会自动对密钥进行填充或截断，但可能会存在安全隐患</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_23">
+                   <property name="text">
+                    <string>选择要加密的文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_enc_plain_file_linetext"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="sm4_enc_plain_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_18">
+                 <item>
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string>选择密文存放位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_enc_store_cipher_file_linetext"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="sm4_enc_store_cipher_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_29">
+                   <property name="text">
+                    <string>文件名</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_cipher_filename_linetext"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="sm4_enc_button">
+                 <property name="text">
+                  <string>加密</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_15">
+            <attribute name="title">
+             <string>解密</string>
+            </attribute>
+            <layout class="QGridLayout" name="gridLayout_29">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QLabel" name="label_27">
+                   <property name="text">
+                    <string>密钥</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_dec_key_linetext">
+                   <property name="placeholderText">
+                    <string>密钥长度尽量等于16，虽然会自动对密钥进行填充或截断，但可能会存在安全隐患</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string>选择要解密的文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_dec_cipher_file_linetext"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="sm4_dec_cipher_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <item>
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>选择明文存放位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_dec_store_plain_file_linetext"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="sm4_dec_store_plain_file_button">
+                   <property name="text">
+                    <string>浏览文件</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>文件名</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sm4_plain_filename_linetext"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="sm4_dec_button">
+                 <property name="text">
+                  <string>解密</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="sm4_log"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sm4_log_clear_button">
+           <property name="text">
+            <string>清空</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
